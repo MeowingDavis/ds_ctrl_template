@@ -2,10 +2,10 @@
 let id = null
 
 // const ws_address = `wss://capogreco-omni.deno.dev`
+// const ws_address = `ws://localhost/`
+const ws_address = `wss://bleeps-with-friends.deno.deploy/`
 
-
-// const socket = new WebSocket (ws_address)
-const socket = new WebSocket (wss://bleeps-with-friends.deno.deploy/)
+const socket = new WebSocket (ws_address)
 
 socket.onmessage = m => {
    const msg = JSON.parse (m.data)
